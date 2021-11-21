@@ -24,6 +24,7 @@ sudo apt-get dist-upgrade -y
 sudo apt install unzip
 sudo apt-get -y install python3-pip
 sudo pip3 install --upgrade requests
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Load .vimrc
 cp .vimrc ~/.vimrc
