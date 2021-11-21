@@ -30,7 +30,7 @@ cp .vimrc ~/.vimrc
 
 # Shell scripts
 mkdir ~/scripts
-cp ./repo-creation.sh ~/scripts/repo.sh
+cp ./repo-creation.sh ~/scripts/repo-creation.sh
 sudo chmod +x ~/scripts/repo-creation.sh
 cp ./git-push.sh ~/scripts/git-push.sh
 sudo chmod +x ~/scripts/git-push.sh
