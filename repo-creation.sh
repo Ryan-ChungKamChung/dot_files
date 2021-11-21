@@ -8,7 +8,7 @@ cd $1
 
 # Creates the local and remote branches
 git init --initial-branch=main                                                   
-gh repo create $1  --public --gitignore $2 --confirm
+gh repo create $1 --public --gitignore $2 --confirm
 git pull origin main
 
 # Creates README.md
