@@ -7,7 +7,7 @@ mkdir $1
 cd $1
 
 # Creates the local and remote branches
-git init                                                
+git init                                                               
 gh repo create $1 --public --gitignore $2 --confirm
 git pull origin main
 
