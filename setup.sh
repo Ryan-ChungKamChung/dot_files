@@ -7,7 +7,7 @@
 # ssh-keygen -t ed25519 -C "ryan.chung-kam-chung@mths.ca"
 # eval "$(ssh-agent -s)"
 # ssh-add ~/.ssh/id_ed25519
-# cat ~/.ssh/id_ ... .pub
+# cat ~/.ssh/id_ed25519.pub
 # Copy this to GitHub Settings > SSH Keys > Add
 # ssh -T git@github.com
 
