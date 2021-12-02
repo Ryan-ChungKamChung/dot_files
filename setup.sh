@@ -26,17 +26,16 @@ sudo apt-get -y install python3-pip
 sudo pip3 install --upgrade requests
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# Load .vimrc
+# Load dot files
 cp .vimrc ~/.vimrc
+cp .bashrc ~/.bashrc
+sudo chown ubuntu ~/.bash_profile
+cp .bash_profile ~/.bash_profile
 
 # Shell scripts
 mkdir ~/scripts
 cp ./repo-creation.sh ~/scripts/repo-creation.sh
 sudo chmod +x ~/scripts/repo-creation.sh
-cp ./git-push.sh ~/scripts/git-push.sh
-sudo chmod +x ~/scripts/git-push.sh
-cp ./java-linter.sh ~/scripts/java-linter.sh
-sudo chmod +x ~/scripts/java-linter.sh
 cp ./java.yml ~/scripts/java.yml
 cp ./swift.yml ~/scripts/swift.yml
 
@@ -69,13 +68,12 @@ unzip -n swiftlint_linux.zip
 sudo mkdir /usr/bin/swiftlint
 sudo cp ./swiftlint /usr/bin/swiftlint/
 echo 'export PATH="${PATH}":/usr/bin/swiftlint' >> ~/.bashrc
-echo "" >> ~/.bashrc
 
 # Swift Syntax Highlighting
 mkdir -p ~/.vim/pack/bundle/start
 git clone --depth=1 https://github.com/apple/swift/
 cp -r ./swift/utils/vim ~/.vim/pack/bundle/start/swift
-# rm -rf ./swift/
+rm -rf ./swift/
 
 # Java autocompletion
 sudo apt install vim-youcompleteme -y
