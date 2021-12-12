@@ -59,6 +59,7 @@ sudo rm ./swift-5.5-RELEASE-ubuntu20.04.tar.gz
 # https://github.com/checkstyle/checkstyle/releases
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
 cp ./checkstyle-8.44-all.jar ~/scripts/checkstyle.jar
+wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
 cp ./mr-coxall_checks.xml ~/scripts/
 
 # SwiftLint
